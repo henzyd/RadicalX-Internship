@@ -1,12 +1,11 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import "./HomePage.css";
-// import Logo from "../icons/Logo.svg";
+import style from "./HomePage.module.css";
 import Logo from "../icons/Logo";
 
 const HomePage = () => {
   return (
-    <div className="Home-Container min-h-screen grid p-2">
+    <div className={`${style.HomeContainer} min-h-screen grid p-2`}>
       <div className="h-full flex flex-col justify-between items-start bg-Snow rounded-3xl shadow-HomeSideBar px-4 py-6">
         <div className="flex flex-col gap-9">
           <div className="w-[125px] self-center">
