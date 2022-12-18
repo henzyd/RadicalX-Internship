@@ -1,12 +1,11 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import style from "./HomePage.module.css";
-import Logo from "../icons/Logo";
+import Logo from "../assets/icons/Logo";
 
 const HomePage = () => {
   return (
-    <div className={`${style.HomeContainer} min-h-screen grid p-2`}>
-      <div className="h-full flex flex-col justify-between items-start bg-Snow rounded-3xl shadow-HomeSideBar px-4 py-6">
+    <div className={`min-h-screen grid p-2 w-full gap-8 grid-cols-HomeGrid`}>
+      <div className="h-full flex flex-col justify-between items-start bg-Snow rounded-3xl shadow-HomeSideBar px-4 py-6 w-full sticky top-0">
         <div className="flex flex-col gap-9">
           <div className="w-[125px] self-center">
             <Logo />
@@ -36,9 +35,7 @@ const HomePage = () => {
           <p>Adam Scott</p>
         </div>
       </div>
-      <main className="h-full">
-        <Outlet />
-      </main>
+      <Outlet />
     </div>
   );
 };

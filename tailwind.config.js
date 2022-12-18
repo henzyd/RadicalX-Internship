@@ -15,10 +15,19 @@ module.exports = {
           Gray50: "#E2E6EB",
           Gray10: "#F1F4F8",
         },
+        Gray1: "#333333",
+        Gray6: "#F2F2F2",
+        Grey: {
+          Light: "#F6F5F9",
+        },
         FieldStroke: "#CECECE",
       },
       boxShadow: {
         HomeSideBar: "0px 12px 34px rgba(0, 0, 0, 0.04)",
+      },
+      gridTemplateColumns: {
+        HomeGrid: "1.2fr 4.8fr",
+        Grid1: "1fr 3fr",
       },
       screens: {
         SmallPhones: { min: " 220px", max: "380px" },
